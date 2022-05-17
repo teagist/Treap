@@ -43,14 +43,14 @@ int main()
 
 void printMenu()
 {
-	cout << " ________________________________" << endl;
-    cout << "| +Item | Insert Item            | " << endl;
-	cout << "| -Item | Delete Item            | " << endl;
+    cout << " ________________________________" << endl;
+    cout << "| +Item | Insert Item            | " << endl; 
+    cout << "| -Item | Delete Item            | " << endl;
     cout << "| ?Item | Search Item            | " << endl;
-	cout << "|   I   | Print Items In Order   |" << endl;
-	cout << "|   P   | Print Items Pre Order  |" << endl;
-	cout << "|   T   | Print Items Post Order |" << endl;
-	cout << "|   D   | Destory the Treap      | " << endl;
+    cout << "|   I   | Print Items In Order   |" << endl;
+    cout << "|   P   | Print Items Pre Order  |" << endl;
+    cout << "|   T   | Print Items Post Order |" << endl;
+    cout << "|   D   | Destory the Treap      | " << endl;
     cout << "|_______|________________________| " << endl << endl;
     cout << "Please choose an operation to perform on the treap." << endl;
     cout << "Enter Q to quit." << endl;
@@ -182,7 +182,7 @@ void choose(Treap<T> &myTreap)
 template <class T>
 T validateInput(T &value)
 {
-		while (true)
+	while (true)
 	{
 		if (cin >> value)
 			break;
@@ -193,7 +193,7 @@ T validateInput(T &value)
 			system("cls");
 			printMenu();
 			cerr << endl << "Please enter a valid item for the treap." << endl;
-        	cout << endl << ">> value: ";
+        	        cout << endl << ">> value: ";
 		}
 	}
 	return value;
